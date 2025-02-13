@@ -3,7 +3,7 @@ l'utente iserisce due parole in successione, con due prompt. il software stampa 
 parola piu corta */
 
 const firstWord = String(prompt("inserisci la prima parola"))
-const secondWord = String(prompt("inserisci la prima parola"))
+const secondWord = String(prompt("inserisci la seconda parola"))
 console.log(firstWord, secondWord);
 
 if (firstWord.length < secondWord.length) {
