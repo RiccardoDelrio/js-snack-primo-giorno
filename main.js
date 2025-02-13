@@ -1,14 +1,13 @@
-/* Il software deve chiedere per 10 volte all’utente di inserire un numero.
-Il programma stampa la somma di tutti i numeri inseriti. */
-let numbersArray = []
-for (let i = 0; i < 10; i++) {
-    const userNumber = Number((prompt("Inserisci un numero:")))
-    numbersArray.push(userNumber)
-}
-console.log(numbersArray);
-let somma = 0
-for (let i = 0; i < numbersArray.length; i++) {
-    somma += (numbersArray[i])
+/* Crea un array vuoto.
+Chiedi per 6 volte all’utente di inserire un numero,
+se è dispari inseriscilo nell’array. */
 
+const oddNumbers = []
+for (i = 0; i < 6; i++) {
+    const userNumber = Number(prompt("inserisci il tuo numero"))
+    if (userNumber % 2 != 0) {
+
+        oddNumbers.push(userNumber)
+    }
 }
-console.log(somma);
+console.log(oddNumbers);
